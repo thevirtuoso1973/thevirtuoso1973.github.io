@@ -1,3 +1,9 @@
+## Things I should probably do
+- Learn more CSS
+- Learn more JavaScript
+- Try coding some machine-learning algorithms (might be good practice of Python skills)
+- Investigate the Monero open-source code, seems interesting.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/thevirtuoso1973/thevirtuoso1973.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
