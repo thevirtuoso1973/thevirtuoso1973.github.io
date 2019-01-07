@@ -2,7 +2,8 @@
 - Learn more CSS
 - Learn more JavaScript
 - Try coding some machine-learning algorithms (might be good practice of Python skills)
-- Investigate the Monero open-source code, seems interesting.
+- Investigate the Monero project open-source code, seems interesting.
+- Complete (or attempt another) edX course - slightly time-consuming unfortunately.
 
 ## Welcome to GitHub Pages
 
