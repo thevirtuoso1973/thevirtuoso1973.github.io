@@ -4,7 +4,19 @@
 - Try coding some machine-learning algorithms (might be good practice of Python skills)
 - Investigate the Monero project open-source code, seems interesting.
 - Complete (or attempt another) edX course - slightly time-consuming unfortunately.
+- Use my Linux machine more, should probably become more adjusted to terminal.
 
+# Learning Goals - Topics to become proficient at:
+- **Cybersecurity** - begin with networking protocols/web servers, try edX course
+- **Encryption/Cryptography** - explore hashing types and cryptography
+- **Data Science** - data scientists seem to be considered the best job in CompSci, doesn't seem quite as interesting though unfortunately.
+- **Financial Cybersystems** - another good field of CompSci: blockchain, data mining, lots of good technology involved.
+
+_Note to self: don't try learning everything at once._
+
+
+
+_(Going to leave this just to show page is a work-in-progress - but mostly in case I forget the syntax)_
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/thevirtuoso1973/thevirtuoso1973.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
