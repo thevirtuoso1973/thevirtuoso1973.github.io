@@ -10,7 +10,7 @@
 - **Cybersecurity** - begin with networking protocols/web servers, try edX course
 - **Encryption/Cryptography** - explore hashing types and cryptography
 - **Data Science** - data scientists seem to be considered the best job in CompSci, doesn't seem quite as interesting though unfortunately.
-- **Financial Cybersystems** - another good field of CompSci: blockchain, data mining, lots of good technology involved.
+- **Financial Cybersystems** - another good field of CompSci; FinTech: blockchain, data mining, lots of good technology involved.
 
 _Note to self: don't try learning everything at once._
 
