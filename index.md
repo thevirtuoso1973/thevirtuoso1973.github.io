@@ -1,6 +1,4 @@
 ## Things I should probably do
-- Learn more CSS
-- Learn more JavaScript
 - Try coding some machine-learning algorithms (might be good practice of Python skills)
 - Investigate the Monero project open-source code, seems interesting.
 - Complete (or attempt another) edX course - slightly time-consuming unfortunately.
@@ -11,6 +9,10 @@
 - **Encryption/Cryptography** - explore hashing types and cryptography
 - **Data Science** - data scientists _seem_ to be considered the best job in CompSci, doesn't seem quite as interesting as the other jobs though unfortunately.
 - **Financial Cybersystems** - another good field of CompSci; FinTech: blockchain, data mining, lots of good technology involved.
+
+# Things I have Done
+- Learned a decent amount of JavaScript
+- Explored some basic machine-learning algorithms.
 
 _Note to self: don't try learning everything at once._
 
