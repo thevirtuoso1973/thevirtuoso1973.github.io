@@ -13,10 +13,11 @@
 # Things I have Done
 - Learned a decent amount of JavaScript
 - Explored some basic machine-learning algorithms.
-- Built a small maze game/generator program that runs on JavaScript.
+- Built a small maze game/generator program that runs on JavaScript (see below).
 
 _Note to self: don't try learning everything at once._
 
+# Maze Game (link to repo: https://github.com/thevirtuoso1973/Maze-Generator):
 <html>
 <head>
   <script src="/js/p5.min.js"></script>
