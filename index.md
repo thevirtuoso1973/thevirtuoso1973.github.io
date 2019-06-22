@@ -17,7 +17,7 @@
 
 _Note to self: don't try learning everything at once._
 
-# Maze Game (link to repo: https://github.com/thevirtuoso1973/Maze-Generator):
+### Maze Game (link to repo: https://github.com/thevirtuoso1973/Maze-Generator):
 <html>
 <head>
   <script src="/js/p5.min.js"></script>
