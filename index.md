@@ -16,3 +16,13 @@
 - Built a small maze game/generator program that runs on JavaScript.
 
 _Note to self: don't try learning everything at once._
+
+<html>
+<head>
+  <script src="/js/p5.min.js"></script>
+</head>
+<h3>Space: New maze | Arrow keys: Move | Goal: Green triangle</h3>
+<div id="mazeCanvas"></div>
+<br>
+<script src="/js/maze.js"></script>
+ </html>
