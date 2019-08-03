@@ -12,6 +12,14 @@
 walls are present.
 */
 
+//Prevent arrow key page scrolling:
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+
 //LOGIC (maze):
 let visited = {} //object that holds visited cells, acts as global var
 function generateMaze() {
