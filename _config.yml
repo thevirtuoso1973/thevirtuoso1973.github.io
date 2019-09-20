@@ -1,3 +1,4 @@
 name: Some Programmer's Page
 title: Welcome to some programmer's homepage
 description: I might use this to log projects, or as a resume.
+permalink: /blog/:year/:month/:day/:title
