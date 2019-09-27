@@ -65,7 +65,7 @@ We're going to be getting a ['fork' of the original](https://github.com/nshepper
 First check if you already have python:
 
 1. Open up the command line, cmd or powershell.
-2. Enter the command `python --version`
+2. Enter the command: `python --version`
 3. If you get an error message then you should install it as explained below, else skip to the next heading.
 
 It's pretty easy to get python just install it from the [website](https://www.python.org/downloads/) and make sure you select *add python and/or pip to the (system) path* (or alternative phrasing)  during the installation process so you can run it from the command line.
@@ -77,7 +77,7 @@ We now need to satisfy any dependencies for the code. The best way would be to i
 1. Find the *requirements.txt* file amongst the downloaded files.
 2. Assuming you used the standard windows 10 file manager, hold *SHIFT* and press *RIGHT-CLICK* - not on a file, but anywhere amongst the empty space below the list of files.
 3. Select *Open Powershell Window*.
-4. Enter the command `pip install -r ./requirements.txt`
+4. Enter the command: `pip install -r ./requirements.txt`
 
 It's possible you recieved an error message. If so, read the output and try to resolve any missing dependencies (using a Google search).
 If it still doesn't work, you could just manually install the four required modules. Enter these commands one at a time:
@@ -99,7 +99,7 @@ Nearly about to start training just a few more steps...
 3. Enter the command: `python encode.py dataset.txt dataset.npz` (this encodes the dataset so the model can read it)
 ...where dataset.txt is your dataset text file. It can be called anything, just make sure to modify the above command to match the name of the file.
 
-## Get the 117M model
+## Getting the 117M model
 
 1. Find the file download_model.py amongst the installed files.
 2. Open up powershell in this folder.
@@ -119,14 +119,24 @@ Press *CTRL+C* to stop the training. Technically, it *pauses*, since you can jus
 That's about it, you now have the ability to generate as many samples as you'd like while training. There are some more steps that you could go through once you have your perfect model that would allow you to generate more samples *without* training. However, it is unlikely you will reach a perfect model, so for the purposes of this post what we have covered is sufficient. I also find it more interesting to generate and view samples as it trains, allowing me to see its progress with each iteration.
 
 # For the masses?
+
 It is clear that, similar to the widespread proliferation of information - and the number of people that have access to it - the internet will (and mostly has) enable(d) billions of people to utilise machine learning technologies. However, as we have just worked through, the process is a bit fiddly and not amazingly effective. 
+
 Hmm... just like a lot of early tech that we take now take for granted. 
+
 It seems to me that the next step of ML/AI technology is not some breakthrough that will allow Skynet-like AI roaming around, but instead for there to be a set of tools that completely abstract much of the 'fiddly' setup and implementation that is currently required to generate samples. 
+
 If such tools existed (which would be used in a similar fashion to current alternatives like TensorFlow or Keras), opportunities would arise for specialist 'trainers' who would be able to fine tune parameters to produce optimal samples.
+
 The ML community would be split into, firstly, the mathematicians focusing on the matrix crunching that goes behind training models, and secondly, trainers who are effective at the art of finetuning parameters, which is a different skill. 
+
 It could also open the possibility of companies selling pre-trained models suited to do a particular task, with paying customers using the model to generate samples to their heart's content (possibly even hiring a trainer to do it for them if they want better results).
+
 As a result, copyright law would likely append an unusual provision - one may not use a sample outside the uses stated in the user licence agreement provided by the company which sold the model. This would tackle the problem of people perhaps selling novels generated with the model, when the company actually only sold it to customers for personal use/entertainment.
+
 It sparks up the (now tiresome to many) question of data ownership.
 If I sell you a model trained on Stephen King's novels, and you generate a 600-page sample that reads like one of Stephen King's works, who owns the sample? Do you (the consumer), the company or Stephen King himself own it? 
+
+## Closing
 
 These are my opinions/predictions on the future of (our interaction with) ML/AI. I believe things will be simplified before we advance. Taking a step back, before another two forward, if you will. As a first year CS student, I do not know precisely how feasible my statements are, because I am not an expert (yet), but I plan to return this topic in the future and see how accurate I was.
