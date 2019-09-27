@@ -12,7 +12,7 @@ Thanks to Ng Wai Foong for [this](https://medium.com/@ngwaifoong92/beginners-gui
 
 # GPT-2
 
-> the model too risky to be released
+> *the model too risky to be released*
 
 We'll be looking at how to retrain the well-known GPT-2 model on our own dataset of choice. The aim is for the model to learn the patterns of any text that you provide it.
 This requires zero technical knowledge or any background in ML, although some basic git and python experience might be useful to debug any problems you may have.
@@ -21,7 +21,7 @@ This requires zero technical knowledge or any background in ML, although some ba
 Before we begin it's best to discuss what text is best to provide it. If you've already decided what you want to train it on, you can just collect that text and paste it into a text file.
 I would also recommend separating the examples with `<|endoftext|>`, like below:
 
-> (Excerpt from my dataset text file)
+> *(Excerpt from my dataset text file)*
 
 ```
 And all my days are trances,
