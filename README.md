@@ -1,5 +1,5 @@
 # (@thevirtuoso1973)'s Website
-This is the source code for my website, it uses the usual front-end langs. Hosts my resume in a convenient online platform (+ any of the more interesting projects of mine).
+This is the source code for my website, it uses the usual front-end langs. Hosts my résumé in a convenient online platform (+ any of the more interesting projects of mine).
 
 Website hosted by github.
 
