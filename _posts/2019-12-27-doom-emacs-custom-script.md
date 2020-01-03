@@ -48,3 +48,7 @@ _config.el_ to bring it to doom emacs.
 (setq display-line-numbers-type 'relative)
 (setq linum-relative-current-symbol "")
 ```
+
+Here's my full
+[config.el](https://gist.github.com/thevirtuoso1973/b4dbabee6f58380fb7e8c35dfc72a2e2)
+file. I may update it in the future.
