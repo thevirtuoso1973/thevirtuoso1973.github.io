@@ -6,7 +6,7 @@ date: 2020-02-20
 _This was an older writeup of mine that I posted before I had set up this blog.
 I am reposting it for my blog now._
 
-### What's this for?
+## What's this for?
 
 After stumbling upon the youtube-dl program ([link to the
 repo](https://github.com/ytdl-org/youtube-dl)), I was impressed with its
@@ -20,7 +20,7 @@ This isn't a web scraper, this uses Google's API, so you don't have to worry
 about Google banning your public IP after one too many song searches.
 To save you a couple hours figuring out their framework, I uploaded my code.
 
-### Setting up the CLI Youtube Searcher
+## Setting up the CLI Youtube Searcher
 
 _Intended for Linux based systems, but may work with other operating systems._
 
@@ -39,4 +39,4 @@ _Intended for Linux based systems, but may work with other operating systems._
     but if not, you may need to change the interpreter to the one you have
     installed e.g. change to python3 in line 1 of the code.
 
-![Screenshot of usage](/assets/searchTubeScreenshot.png/)
+![Screenshot of usage]({{ site.url }}/assets/searchTubeScreenshot.png/)
