@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config) :: Hello there! — A student&#39;s personal blog and portfolio.</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
+Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
+The init.el file in the private config already handles most of the configuration you&amp;rsquo;d want to get started with, but there were two things I added to my config."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/doom-emacs-custom/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)"/>
+<meta name="twitter:description" content="Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
+Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
+The init.el file in the private config already handles most of the configuration you&rsquo;d want to get started with, but there were two things I added to my config."/>
+
+
+
+<meta property="og:title" content="Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)" />
+<meta property="og:description" content="Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
+Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
+The init.el file in the private config already handles most of the configuration you&rsquo;d want to get started with, but there were two things I added to my config." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/doom-emacs-custom/" />
+<meta property="article:published_time" content="2019-12-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-27T00:00:00+00:00" /><meta property="og:site_name" content="Hello there!" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">@thevirtuoso1973</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Blog</a></li>
+        
+      
+        
+          <li><a href="/cv">CV</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+        
+          <li><a href="/social">Social</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/posts">Blog</a></li>
+      
+    
+      
+        <li><a href="/cv">CV</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+      
+        <li><a href="/social">Social</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="/posts/doom-emacs-custom/">Day/Night Theme Switching on Doom Emacs (+ Bonus Config)</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2019-12-27
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      <h1 id="intro">Intro</h1>
+<p>So, inevitably, as one delves deeper into their editor of choice, one finds
+themselves wishing to customise it to some extent.</p>
+<p>Vim can handle this sufficiently, but I found myself reaching the point where my
+vim config started to get a little bit cluttered. So, after having a look at
+Emacs, I decided to make the switch, courtesy of <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>.</p>
+<p>The <em>init.el</em> file in the private config already handles most of the
+configuration you&rsquo;d want to get started with, but there were two things I added
+to my <em>config.el</em> file that seemed cool.</p>
+<h1 id="daynight-theme-switcher">Day/Night Theme Switcher</h1>
+<p>I wanted to have Doom Emacs automatically switch between a day theme and a night
+theme depending on the time of day - which is entirely possible using the below
+script that I based on
+<a href="https://stackoverflow.com/questions/14760567/emacs-auto-load-color-theme-by-time">this</a>.</p>
+<h2 id="script">Script</h2>
+<p>I have refactored it from the original to make it work with doom-emacs. I&rsquo;ve
+also added comments so you should be able to take it and customise it further if
+you want to.
+Put this in your <em>config.el</em> file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(setq hour
+      (<span style="color:#a6e22e">string-to-number</span>
+       (<span style="color:#a6e22e">substring</span> (<span style="color:#a6e22e">current-time-string</span>) <span style="color:#ae81ff">11</span> <span style="color:#ae81ff">13</span>))) <span style="color:#75715e">;; gets the hour</span>
+(if (<span style="color:#a6e22e">member</span> hour (number-sequence <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">16</span>)) <span style="color:#75715e">;; if between 06:00-16:59</span>
+    (setq now <span style="color:#e6db74">&#39;doom-solarized-light</span>) <span style="color:#75715e">;; then light theme</span>
+  (setq now <span style="color:#e6db74">&#39;doom-dracula</span>)) <span style="color:#75715e">;; else dark theme from 5pm</span>
+(if (<span style="color:#a6e22e">equal</span> now doom-theme) <span style="color:#75715e">;; only switches to the correct theme if needed</span>
+    <span style="color:#66d9ef">nil</span>
+  (setq doom-theme now))
+</code></pre></div><p>It checks and switches to the correct theme <em>once</em>, when doom-emacs is started.</p>
+<h1 id="hybrid-line-numbers">Hybrid Line Numbers</h1>
+<p>I also liked the hybrid line numbers that vim had, so add this to your
+<em>config.el</em> to bring it to doom emacs.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"><span style="color:#75715e">;; line numbers</span>
+(setq display-line-numbers-type <span style="color:#e6db74">&#39;relative</span>)
+(setq linum-relative-current-symbol <span style="color:#e6db74">&#34;&#34;</span>)
+</code></pre></div><p>Here&rsquo;s my full
+<a href="https://gist.github.com/thevirtuoso1973/b4dbabee6f58380fb7e8c35dfc72a2e2">config.el</a>
+file. I may update it in the future.</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="/posts/searchtube-setup/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">CLI Youtube Searcher</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="/posts/vim-guide/">
+                  <span class="button__text">The (Ultimate) Vim(rc) Guide, with plugins</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">@thevirtuoso1973</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script><a href='https://github.com/thevirtuoso1973'>thevirtuoso1973's GitHub</a>
+<br>
+<a href="/posts/index.xml">
+  <img style="display: block; margin-left: auto; margin-right: auto;"
+  src="/pic_rss.gif" width="36" height="14"></a>
+<br>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

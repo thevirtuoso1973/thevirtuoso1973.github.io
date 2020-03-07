@@ -2,14 +2,18 @@
 <html lang="en">
   <head>
     
-      <title>About :: Hello there! — A student&#39;s personal blog and portfolio.</title>
+      <title>Randomly Generating Maze Game :: Hello there! — A student&#39;s personal blog and portfolio.</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="You can find my résumé/CV, projects and my blog on this website."/>
+<meta name="description" content="Uses a backtracking algo to generate new mazes each time the space bar is pressed.
+Space: New maze | Arrow keys: Move | Goal: Green triangle
+Note: Requires JavaScript.
+  
+Up  Left Right  Down  New Maze  "/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="/about/" />
+<link rel="canonical" href="/showcase/random-maze-game/" />
 
 
 
@@ -26,20 +30,28 @@
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Randomly Generating Maze Game"/>
+<meta name="twitter:description" content="Uses a backtracking algo to generate new mazes each time the space bar is pressed.
+Space: New maze | Arrow keys: Move | Goal: Green triangle
+Note: Requires JavaScript.
+  
+Up  Left Right  Down  New Maze  "/>
 
 
 
-<meta property="og:title" content="About" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/about/" />
-<meta property="og:site_name" content="Hello there!" />
+<meta property="og:title" content="Randomly Generating Maze Game" />
+<meta property="og:description" content="Uses a backtracking algo to generate new mazes each time the space bar is pressed.
+Space: New maze | Arrow keys: Move | Goal: Green triangle
+Note: Requires JavaScript.
+  
+Up  Left Right  Down  New Maze  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/showcase/random-maze-game/" />
+<meta property="article:published_time" content="2019-08-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-03T00:00:00+00:00" /><meta property="og:site_name" content="Hello there!" />
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/about/index.xml" title="Hello there!" />
 
 
 
@@ -140,8 +152,14 @@
   
 
   <div class="post">
-    <h2 class="post-title"><a href="/about/">About</a></h2>
+    <h2 class="post-title"><a href="/showcase/random-maze-game/">Randomly Generating Maze Game</a></h2>
     <div class="post-meta">
+      
+        <span class="post-date">
+          2019-08-03
+        </span>
+
+        
       
 
       
@@ -153,8 +171,26 @@
     
 
     <div class="post-content">
-      <p>You can find my résumé/CV, projects and my blog on this website.</p>
-<p><a href="https://ko-fi.com/T6T2105I3"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a></p>
+      <p>Uses a backtracking algo to generate new mazes each time the space bar is pressed.</p>
+<p><strong>Space: New maze | Arrow keys: Move | Goal: Green triangle</strong></p>
+<p><em>Note: Requires JavaScript.</em></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<div id="mazeCanvas"></div>
+<script src="/maze.js"></script><br>
+<div style="width:100%; text-align: center;">
+<div style="display: inline-block;"><button type="button" onclick="simulateKey('UP_ARROW')">Up</button></div>
+</div>
+<div style="width:100%; text-align: center;">
+<div style="display: inline-block;"><button type="button" onclick="simulateKey('LEFT_ARROW')">Left</button></div>
+<div style="display: inline-block;"><button type="button" onclick="simulateKey('RIGHT_ARROW')">Right</button></div>
+</div>
+<div style="width:100%; text-align: center;">
+<div style="display: inline-block;"><button type="button" onclick="simulateKey('DOWN_ARROW')">Down</button></div>
+</div>
+<br>
+<div style="width:100%; text-align: center;">
+<div style="display: inline-block;"><button type="button" onclick="simulateKey('SPACEBAR')">New Maze</button></div>
+</div>
 
     </div>
     

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showcase on Hello there!</title>
+    <link>/showcase/</link>
+    <description>Recent content in Showcase on Hello there!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/showcase/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CLI Youtube Searcher</title>
+      <link>/showcase/cliyoutube/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/cliyoutube/</guid>
+      <description>See my blog post.</description>
+    </item>
+    
+    <item>
+      <title>Local Music Playback Skill for MycroftAI</title>
+      <link>/showcase/mycroftai-music/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/mycroftai-music/</guid>
+      <description>A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
+Here&amp;rsquo;s the code.</description>
+    </item>
+    
+    <item>
+      <title>J.P. Morgan Virtual Internship</title>
+      <link>/showcase/jp-virtual-intern/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/jp-virtual-intern/</guid>
+      <description>I recently completed a &amp;lsquo;virtual internship&amp;rsquo; lead by JP Morgan on InsideSherpa&amp;rsquo;s platform. Here&amp;rsquo;s the certificate of completion. I worked on some interesting tasks like:
+ Interfacing with a stock-price data feed. Using JPMorgan Chase&amp;rsquo;s frameworks and tools. Displaying data visually for traders.  </description>
+    </item>
+    
+    <item>
+      <title>Breakout Game on the Micro:bit</title>
+      <link>/showcase/microbit-breakout/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/microbit-breakout/</guid>
+      <description>A &amp;lsquo;breakout&amp;rsquo; clone for the microbit. Probably the smallest (graphically speaking) version of the Breakout game, uses 25 pixels/leds (arranged as a 5x5 grid).
+This is the repo/python code. Check the releases for a hex file you can copy to your own micro:bit.</description>
+    </item>
+    
+    <item>
+      <title>Randomly Generating Maze Game</title>
+      <link>/showcase/random-maze-game/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/random-maze-game/</guid>
+      <description>Uses a backtracking algo to generate new mazes each time the space bar is pressed.
+Space: New maze | Arrow keys: Move | Goal: Green triangle
+Note: Requires JavaScript.
+  
+Up  Left Right  Down  New Maze  </description>
+    </item>
+    
+  </channel>
+</rss>
