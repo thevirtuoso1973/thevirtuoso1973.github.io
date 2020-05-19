@@ -17,7 +17,7 @@
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/showcase/cliyoutube/</guid>
-      <description>See my blog post.</description>
+      <description>Have a look at my blog post.</description>
     </item>
     
     <item>
@@ -57,10 +57,10 @@ This is the repo/python code. Check the releases for a hex file you can copy to 
       
       <guid>/showcase/random-maze-game/</guid>
       <description>Uses a backtracking algo to generate new mazes each time the space bar is pressed.
-Space: New maze | Arrow keys: Move | Goal: Green triangle
-Note: Requires JavaScript.
+Goal: Get the red ball to the green triangle.
+Arrow keys: Move | Space: New maze
   
-Up  Left Right  Down  New Maze  </description>
+Up  Left Right  Down  New Maze  Note: Requires JavaScript.</description>
     </item>
     
   </channel>
