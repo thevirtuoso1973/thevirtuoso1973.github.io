@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/showcase/case-converter/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/emacs/</loc>
     <lastmod>2020-05-28T00:00:00+00:00</lastmod>
   </url>
