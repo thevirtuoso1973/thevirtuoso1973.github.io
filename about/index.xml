@@ -2,6 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on CyberChris</title>
+    
+    
+    
     <link>/about/</link>
     <description>Recent content in About on CyberChris</description>
     <generator>Hugo -- gohugo.io</generator>

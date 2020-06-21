@@ -2,6 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CyberChris</title>
+    
+    
+    
     <link>/tags/</link>
     <description>Recent content in Tags on CyberChris</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -17,7 +20,18 @@
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/emacs/</guid>
-      <description></description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
     </item>
     
     <item>
@@ -26,7 +40,18 @@
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/latex/</guid>
-      <description></description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
     </item>
     
     <item>
@@ -35,7 +60,18 @@
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/org-mode/</guid>
-      <description></description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
     </item>
     
     <item>
@@ -44,7 +80,18 @@
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/elisp/</guid>
-      <description></description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
     </item>
     
     <item>
@@ -53,7 +100,18 @@
       <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/vim/</guid>
-      <description></description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
     </item>
     
   </channel>

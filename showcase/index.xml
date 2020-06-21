@@ -2,6 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Showcase on CyberChris</title>
+    
+    
+    
     <link>/showcase/</link>
     <description>Recent content in Showcase on CyberChris</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -17,8 +20,19 @@
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/showcase/case-converter/</guid>
-      <description>case-converter is a free and open-source command-line application to convert the case of matched sections of text into other cases. It&amp;rsquo;s a convenient alternative to using a sed script.
-I coded it in a day mostly to learn how to properly write modern (at the time of writing) Python applications, using Poetry and pytest.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          case-converter is a free and open-source command-line application to convert the case of matched sections of text into other cases. It&amp;rsquo;s a convenient alternative to using a sed script.
+I coded it in a day mostly to learn how to properly write modern (at the time of writing) Python applications, using Poetry and pytest.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -27,7 +41,18 @@ I coded it in a day mostly to learn how to properly write modern (at the time of
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/showcase/cliyoutube/</guid>
-      <description>Have a look at my blog post.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Have a look at my blog post.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -36,8 +61,19 @@ I coded it in a day mostly to learn how to properly write modern (at the time of
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/showcase/mycroftai-music/</guid>
-      <description>A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
-Here&amp;rsquo;s the code.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
+Here&amp;rsquo;s the code.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -46,8 +82,19 @@ Here&amp;rsquo;s the code.</description>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/showcase/jp-virtual-intern/</guid>
-      <description>I recently completed a &amp;lsquo;virtual internship&amp;rsquo; lead by JP Morgan on InsideSherpa&amp;rsquo;s platform. Here&amp;rsquo;s the certificate of completion. I worked on some interesting tasks like:
- Interfacing with a stock-price data feed. Using JPMorgan Chase&amp;rsquo;s frameworks and tools. Displaying data visually for traders.  </description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          I recently completed a &amp;lsquo;virtual internship&amp;rsquo; lead by JP Morgan on InsideSherpa&amp;rsquo;s platform. Here&amp;rsquo;s the certificate of completion. I worked on some interesting tasks like:
+ Interfacing with a stock-price data feed. Using JPMorgan Chase&amp;rsquo;s frameworks and tools. Displaying data visually for traders.  
+          
+        
+        </description>
     </item>
     
     <item>
@@ -56,8 +103,19 @@ Here&amp;rsquo;s the code.</description>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/showcase/microbit-breakout/</guid>
-      <description>A &amp;lsquo;breakout&amp;rsquo; clone for the microbit. Probably the smallest (graphically speaking) version of the Breakout game, uses 25 pixels/leds (arranged as a 5x5 grid).
-This is the repo/python code. Check the releases for a hex file you can copy to your own micro:bit.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          A &amp;lsquo;breakout&amp;rsquo; clone for the microbit. Probably the smallest (graphically speaking) version of the Breakout game, uses 25 pixels/leds (arranged as a 5x5 grid).
+This is the repo/python code. Check the releases for a hex file you can copy to your own micro:bit.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -66,11 +124,22 @@ This is the repo/python code. Check the releases for a hex file you can copy to 
       <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/showcase/random-maze-game/</guid>
-      <description>Uses a backtracking algo to generate new mazes each time the space bar is pressed.
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Uses a backtracking algo to generate new mazes each time the space bar is pressed.
 Goal: Get the red ball to the green triangle.
 Arrow keys: Move | Space: New maze
   
-Up  Left Right  Down  New Maze  Note: Requires JavaScript.</description>
+Up  Left Right  Down  New Maze  Note: Requires JavaScript.
+          
+        
+        </description>
     </item>
     
   </channel>
