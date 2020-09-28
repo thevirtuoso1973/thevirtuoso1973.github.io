@@ -9,10 +9,33 @@
     <description>Recent content in emacs on CyberChris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding an iCalendar source to calfw (feat. Doom Emacs)</title>
+      <link>/posts/ical-doom-emacs/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ical-doom-emacs/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Introduction  This will be a short post on how I use custom sources for the Doom Emacs calendar module; in particular, a iCalendar/ics source.
+ Whenever I mention &amp;#39;Doom&amp;#39;, I&amp;#39;m referring to Doom Emacs.
+  Prerequisites  A basic understanding of how to use Doom Emacs, and some familiarity with Lisp-like languages.
+  Getting the Calendar  Firstly, you&amp;#39;ll want to activate the calendar module in your init.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Writing Assignments with Org-mode (in Doom Emacs)</title>
