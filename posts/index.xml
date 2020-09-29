@@ -28,10 +28,9 @@
         
         
         
-          Introduction  This will be a short post on how I use custom sources for the Doom Emacs calendar module; in particular, a iCalendar/ics source.
+          Here&amp;#39;s my calendar in Emacs. I use both an org-agenda and an iCalendar source.   Introduction  This will be a short post on how I use custom sources for the Doom Emacs calendar module; in particular, a iCalendar/ics source.
  Whenever I mention &amp;#39;Doom&amp;#39;, I&amp;#39;m referring to Doom Emacs.
   Prerequisites  A basic understanding of how to use Doom Emacs, and some familiarity with Lisp-like languages.
-  Getting the Calendar  Firstly, you&amp;#39;ll want to activate the calendar module in your init.
           
         
         </description>
