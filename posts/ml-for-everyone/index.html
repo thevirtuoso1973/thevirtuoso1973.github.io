@@ -2,32 +2,49 @@
 <html lang="en">
   <head>
     
-      <title>Machine Learning For the Masses (and How to Retrain GPT-2) :: CyberChris — A student&#39;s personal blog and portfolio.</title>
+      <title>
+        Machine Learning For the Masses (and How to Retrain GPT-2) ::
+        CyberChris — A student&#39;s personal blog and portfolio.
+      </title>
     
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="This assumes the reader is on the Windows operating system, but much of the information is relevant to any other OS.
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="This assumes the reader is on the Windows operating system, but much of the information is relevant to any other OS.
 The initial aim of this post was solely a step-by-step guide to retrain GPT-2 using a custom dataset, but I will also ponder on the future of AI and machine learning (not on its progress per se but on how we will interact with it, in the future).
-Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a lot."/>
-<meta name="keywords" content=""/>
-<meta name="robots" content="noodp"/>
+Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a lot."
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
 <link rel="canonical" href="/posts/ml-for-everyone/" />
 
 
 
 
 
+<link rel="stylesheet" href="/assets/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
 
 
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="/img/favicon.png" />
 
-<link rel="stylesheet" href="/css/style.min.css">
 
-
-<link rel="stylesheet" href="/style.css">
-
-
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/img/favicon.png">
+<link href="/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
 
 
 <meta name="twitter:card" content="summary"/>
@@ -57,13 +74,19 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
     <div class="container">
       <header class="header">
   <span class="header__inner">
-    <a href="/" class="logo" style="text-decoration: none;">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
   
     <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
 </svg>
 </span>
-    <span class="logo__text">CyberChris</span>
+    <span class="logo__text"
+      >CyberChris</span
+    >
     <span class="logo__cursor"></span>
   
 </a>
@@ -94,12 +117,13 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
         <ul class="menu__sub-inner">
           <li class="menu__sub-inner-more-trigger">
             Show more
-            <span class="menu__sub-inner-more-trigger-icon"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+            <span class="menu__sub-inner-more-trigger-icon"
+              ><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
 </svg>
-</span>
+</span
+            >
           </li>
-
           <ul class="menu__sub-inner-more hidden">
             
               
@@ -113,7 +137,7 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
           </ul>
         </ul>
       
-    
+      
   </ul>
 
   <ul class="menu__inner menu__inner--mobile">
@@ -147,16 +171,25 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
 
         <span class="menu-trigger">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
           </svg>
         </span>
       
       <span class="theme-toggle">
-        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
 </svg>
 
       </span>
@@ -171,7 +204,7 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
   
 
   <div class="post">
-    <h1 class="post-title"><a href="/posts/ml-for-everyone/">Machine Learning For the Masses (and How to Retrain GPT-2)</a></h1>
+    <h1 class="post-title">Machine Learning For the Masses (and How to Retrain GPT-2)</h1>
     <div class="post-meta">
       
         <span class="post-date">
@@ -184,6 +217,8 @@ Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a 
       
 
       
+
+
       
     </div>
 
@@ -301,7 +336,9 @@ If I sell you a model trained on Stephen King&rsquo;s novels, and you generate a
       
         <div class="pagination">
           <div class="pagination__title">
-            <span class="pagination__title-h">Read other posts</span>
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
             <hr />
           </div>
           <div class="pagination__buttons">
@@ -326,15 +363,13 @@ If I sell you a model trained on Stephen King&rsquo;s novels, and you generate a
       
     
 
-
     
       
         
 
       
     
-
-    </div>
+  </div>
 
       </div>
 
@@ -342,32 +377,39 @@ If I sell you a model trained on Stephen King&rsquo;s novels, and you generate a
         <footer class="footer">
   <div class="footer__inner">
     
-      <a href="/" class="logo" style="text-decoration: none;">
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
   
     <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
 </svg>
 </span>
-    <span class="logo__text">CyberChris</span>
+    <span class="logo__text"
+      >CyberChris</span
+    >
     <span class="logo__cursor"></span>
   
 </a>
 
       <div class="copyright">
-        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
-        <span>Theme created by <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span>
+        <span
+          >© 2021 Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
       </div>
     
   </div>
 </footer>
 
-
-
-
-
-<script src="/js/menu.js"></script>
-<script src="/js/theme.js"></script>
-<script src="/js/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 
 
 

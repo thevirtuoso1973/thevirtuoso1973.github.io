@@ -9,10 +9,32 @@
     <description>Recent content in Posts on CyberChris</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basic Scripting With Awk And Gnuplot</title>
+      <link>/posts/awk-and-gnuplot/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/awk-and-gnuplot/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Introduction  This will be a short example-based guide to (a) awk (b) gnuplot and (c) using them in a script.
+ I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp;amp; gnuplot to automate it?
+  The Problem  I needed to compare how long a program says it takes with how long it actually takes to execute.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>Adding an iCalendar source to Calfw (feat. Doom Emacs)</title>
