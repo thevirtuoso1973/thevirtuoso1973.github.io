@@ -1,359 +1,114 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Good Day! on CyberChris</title>
-    
-    
-    
-    <link>/</link>
-    <description>Recent content in Good Day! on CyberChris</description>
+    <title>Chris Tomy</title>
+    <link>https://cyberchris.xyz/</link>
+    <description>Recent content on Chris Tomy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2020 23:26:34 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cyberchris.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Scripting With Awk And Gnuplot</title>
-      <link>/posts/awk-and-gnuplot/</link>
+      <link>https://cyberchris.xyz/posts/awk-and-gnuplot/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/awk-and-gnuplot/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Posted to HN. Comments and discussion highly encouraged.
+      <guid>https://cyberchris.xyz/posts/awk-and-gnuplot/</guid>
+      <description>Posted to HN. Comments and discussion highly encouraged.
 Introduction  This will be a short example-based guide to (a) awk (b) gnuplot and (c) using them in a script.
- I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp;amp; gnuplot to automate it?
-          
-        
-        </description>
+ I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp;amp; gnuplot to automate it?</description>
     </item>
     
     <item>
       <title>Adding an iCalendar source to Calfw (feat. Doom Emacs)</title>
-      <link>/posts/ical-doom-emacs/</link>
+      <link>https://cyberchris.xyz/posts/ical-doom-emacs/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ical-doom-emacs/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Here&amp;#39;s my calendar in Emacs. I use both an org-agenda and an iCalendar source.   Introduction  This will be a short post on how I use custom sources for the Doom Emacs calendar module; in particular, a iCalendar/ics source.
+      <guid>https://cyberchris.xyz/posts/ical-doom-emacs/</guid>
+      <description>Here&amp;#39;s my calendar in Emacs. I use both an org-agenda and an iCalendar source.   Introduction  This will be a short post on how I use custom sources for the Doom Emacs calendar module; in particular, a iCalendar/ics source.
  Whenever I mention &amp;#39;Doom&amp;#39;, I&amp;#39;m referring to Doom Emacs.
-  Prerequisites  A basic understanding of how to use Doom Emacs, and some familiarity with Lisp-like languages.
-          
-        
-        </description>
+  Prerequisites  A basic understanding of how to use Doom Emacs, and some familiarity with Lisp-like languages.</description>
     </item>
     
     <item>
       <title>GSA Ultra Hackathon</title>
-      <link>/showcase/gsa-ultra/</link>
+      <link>https://cyberchris.xyz/showcase/gsa-ultra/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/gsa-ultra/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Thanks to GSA Capital for sending me these cool t-shirts for my standing in their recent hackathon. I placed 109 out of over 900 undergrads/postgrads worldwide. Congrats to the winners!
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/showcase/gsa-ultra/</guid>
+      <description>Thanks to GSA Capital for sending me these cool t-shirts for my standing in their recent hackathon. I placed 109 out of over 900 undergrads/postgrads worldwide. Congrats to the winners!</description>
     </item>
     
     <item>
       <title>CLI Case Converter</title>
-      <link>/showcase/case-converter/</link>
+      <link>https://cyberchris.xyz/showcase/case-converter/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/case-converter/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          case-converter is a free and open-source command-line application to convert the case of matched sections of text into other cases. It&amp;rsquo;s a convenient alternative to using a sed script.
-I coded it in a day mostly to learn how to properly write modern (at the time of writing) Python applications, using Poetry and pytest.
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/showcase/case-converter/</guid>
+      <description>case-converter is a free and open-source command-line application to convert the case of matched sections of text into other cases. It&amp;rsquo;s a convenient alternative to using a sed script.
+I coded it in a day mostly to learn how to properly write modern (at the time of writing) Python applications, using Poetry and pytest.</description>
     </item>
     
     <item>
       <title>Writing Assignments with Org-mode (in Doom Emacs)</title>
-      <link>/posts/org-mode-assignments/</link>
+      <link>https://cyberchris.xyz/posts/org-mode-assignments/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/org-mode-assignments/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Introduction  This post will be a brief tour on writing (work/university) assignments in org-mode, with the goal of producing a nicely typesetted PDF document without having to use much LaTeX.
+      <guid>https://cyberchris.xyz/posts/org-mode-assignments/</guid>
+      <description>Introduction  This post will be a brief tour on writing (work/university) assignments in org-mode, with the goal of producing a nicely typesetted PDF document without having to use much LaTeX.
  Everything mentioned will also apply to Emacs in general, but Doom Emacs comes with all the features I mention.
 Prerequisites  Basic knowledge of org-mode, LaTeX (if math required), and Emacs.
-    (Very) Quick Org-Mode Primer  Org-mode is a plain-text hierarchical markup language.
-          
-        
-        </description>
+    (Very) Quick Org-Mode Primer  Org-mode is a plain-text hierarchical markup language.</description>
     </item>
     
     <item>
       <title>CLI Youtube Searcher</title>
-      <link>/posts/searchtube-setup/</link>
+      <link>https://cyberchris.xyz/posts/searchtube-setup/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/searchtube-setup/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          This was an older writeup of mine that I posted before I had set up this blog. I am reposting it for my blog now.
-What&amp;rsquo;s this for? After stumbling upon the youtube-dl program (link to the repo), I was impressed with its functionality but found it quite inconvenient to have to leave the terminal to search for the url. This led me to write this python script that lets you search Youtube and display the video/playlist ID, all in the command line.
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/posts/searchtube-setup/</guid>
+      <description>This was an older writeup of mine that I posted before I had set up this blog. I am reposting it for my blog now.
+What&amp;rsquo;s this for? After stumbling upon the youtube-dl program (link to the repo), I was impressed with its functionality but found it quite inconvenient to have to leave the terminal to search for the url. This led me to write this python script that lets you search Youtube and display the video/playlist ID, all in the command line.</description>
     </item>
     
     <item>
       <title>CLI Youtube Searcher</title>
-      <link>/showcase/cliyoutube/</link>
+      <link>https://cyberchris.xyz/showcase/cliyoutube/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/cliyoutube/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Have a look at my blog post.
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/showcase/cliyoutube/</guid>
+      <description>Have a look at my blog post.</description>
     </item>
     
     <item>
       <title>Local Music Playback Skill for MycroftAI</title>
-      <link>/showcase/mycroftai-music/</link>
+      <link>https://cyberchris.xyz/showcase/mycroftai-music/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/mycroftai-music/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
-Here&amp;rsquo;s the code.
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/showcase/mycroftai-music/</guid>
+      <description>A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
+Here&amp;rsquo;s the code.</description>
     </item>
     
     <item>
       <title>Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)</title>
-      <link>/posts/doom-emacs-custom/</link>
+      <link>https://cyberchris.xyz/posts/doom-emacs-custom/</link>
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/doom-emacs-custom/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
+      <guid>https://cyberchris.xyz/posts/doom-emacs-custom/</guid>
+      <description>Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
 Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
-The init.el file in the private config already handles most of the configuration you&amp;rsquo;d want to get started with, but there were two things I added to my config.
-          
-        
-        </description>
+The init.el file in the private config already handles most of the configuration you&amp;rsquo;d want to get started with, but there were two things I added to my config.</description>
     </item>
     
     <item>
       <title>J.P. Morgan Virtual Internship</title>
-      <link>/showcase/jp-virtual-intern/</link>
+      <link>https://cyberchris.xyz/showcase/jp-virtual-intern/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/showcase/jp-virtual-intern/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          I recently completed a &amp;lsquo;virtual internship&amp;rsquo; lead by JP Morgan on InsideSherpa&amp;rsquo;s platform. Here&amp;rsquo;s the certificate of completion. I worked on some interesting tasks like:
- Interfacing with a stock-price data feed. Using JPMorgan Chase&amp;rsquo;s frameworks and tools. Displaying data visually for traders.  
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>The (Ultimate) Vim(rc) Guide, with plugins</title>
-      <link>/posts/vim-guide/</link>
-      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/vim-guide/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Intro So after picking up Vim less than a year ago, and spending a lot of time with it, I can say for sure it is the best text editor I have ever used.
-Okay, that&amp;rsquo;s all the Vim propaganda you&amp;rsquo;ll find in this post.
-The main aim of this post is to get people new to Vim into a comfortable environment, while also teaching you how to get plugins into your vim config since you&amp;rsquo;ll probably want to customize it, once you get a feel of Vim.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Breakout Game on the Micro:bit</title>
-      <link>/showcase/microbit-breakout/</link>
-      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/showcase/microbit-breakout/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          A &amp;lsquo;breakout&amp;rsquo; clone for the microbit. Probably the smallest (graphically speaking) version of the Breakout game, uses 25 pixels/leds (arranged as a 5x5 grid).
-This is the repo/python code. Check the releases for a hex file you can copy to your own micro:bit.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Machine Learning For the Masses (and How to Retrain GPT-2)</title>
-      <link>/posts/ml-for-everyone/</link>
-      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ml-for-everyone/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          This assumes the reader is on the Windows operating system, but much of the information is relevant to any other OS.
-The initial aim of this post was solely a step-by-step guide to retrain GPT-2 using a custom dataset, but I will also ponder on the future of AI and machine learning (not on its progress per se but on how we will interact with it, in the future).
-Thanks to Ng Wai Foong for this useful guide on training GPT-2 that helped me a lot.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>RSS Support added</title>
-      <link>/posts/rss-added/</link>
-      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/rss-added/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          I&amp;rsquo;ve added support for RSS, allowing you to read posts through your RSS reader of choice. Use the RSS button in the footer of any page to get the link.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Launching my blog</title>
-      <link>/posts/blog-launched/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-launched/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Extending my website to include a blog. I&amp;rsquo;ll now be writing articles (occasionaly) here on various tech related topics. Expect more informative/educational types of article rather than journalistic types of article.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Randomly Generating Maze Game</title>
-      <link>/showcase/random-maze-game/</link>
-      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/showcase/random-maze-game/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Uses a backtracking algo to generate new mazes each time the space bar is pressed.
-Goal: Get the red ball to the green triangle.
-Arrow keys: Move | Space: New maze
-  
-Up  Left Right  Down  New Maze  Note: Requires JavaScript.
-          
-        
-        </description>
+      <guid>https://cyberchris.xyz/showcase/jp-virtual-intern/</guid>
+      <description>I recently completed a &amp;lsquo;virtual internship&amp;rsquo; lead by JP Morgan on InsideSherpa&amp;rsquo;s platform. Here&amp;rsquo;s the certificate of completion. I worked on some interesting tasks like:
+ Interfacing with a stock-price data feed. Using JPMorgan Chase&amp;rsquo;s frameworks and tools. Displaying data visually for traders.  </description>
     </item>
     
   </channel>
