@@ -9,6 +9,16 @@
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cyberchris.xyz/showcase/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>NudgeMe: Cross-Platform Mobile Wellbeing Tracker</title>
+      <link>https://cyberchris.xyz/showcase/nudgeme/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cyberchris.xyz/showcase/nudgeme/</guid>
+      <description>This was a fairly extensive project undertaken as part of one of my modules, and although I don&amp;rsquo;t usually mention university work in Showcase, this is an exception since everything we did was self-learned.
+I was team leader for a team of two (including me), and we built a full-stack cross-platform mobile application designed to help the UK population track and share their wellbeing &amp;amp; steps. The mobile client was built with Flutter and the back-end in Go.</description>
+    </item>
+    
+    <item>
       <title>GSA Ultra Hackathon</title>
       <link>https://cyberchris.xyz/showcase/gsa-ultra/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
