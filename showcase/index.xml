@@ -9,6 +9,16 @@
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
     <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cyberchris.xyz/showcase/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Experiment with Boids with Blazor</title>
+      <link>https://cyberchris.xyz/showcase/blazor-boids/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cyberchris.xyz/showcase/blazor-boids/</guid>
+      <description>I built a boid simulation with Blazor that allows you to toggle the three rules, as well some other options. Check it out here.
+Notably, you can switch between rendering in JS, or through Blazor&amp;rsquo;s API, with significant performance effects. (Spoilers: JS is way faster.)</description>
+    </item>
+    
+    <item>
       <title>NudgeMe: Cross-Platform Mobile Wellbeing Tracker</title>
       <link>https://cyberchris.xyz/showcase/nudgeme/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>

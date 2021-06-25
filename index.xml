@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cyberchris.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cyberchris.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experiment with Boids with Blazor</title>
+      <link>https://cyberchris.xyz/showcase/blazor-boids/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cyberchris.xyz/showcase/blazor-boids/</guid>
+      <description>I built a boid simulation with Blazor that allows you to toggle the three rules, as well some other options. Check it out here.
+Notably, you can switch between rendering in JS, or through Blazor&amp;rsquo;s API, with significant performance effects. (Spoilers: JS is way faster.)</description>
+    </item>
+    
     <item>
       <title>NudgeMe: Cross-Platform Mobile Wellbeing Tracker</title>
       <link>https://cyberchris.xyz/showcase/nudgeme/</link>
@@ -98,17 +108,6 @@ What&amp;rsquo;s this for? After stumbling upon the youtube-dl program (link to 
       <guid>https://cyberchris.xyz/showcase/mycroftai-music/</guid>
       <description>A skill/extension for the MycroftAI assistant that allows playback of downloaded mp3 files with MycroftAI (on Linux).
 Here&amp;rsquo;s the code.</description>
-    </item>
-    
-    <item>
-      <title>Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)</title>
-      <link>https://cyberchris.xyz/posts/doom-emacs-custom/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cyberchris.xyz/posts/doom-emacs-custom/</guid>
-      <description>Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
-Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
-The init.el file in the private config already handles most of the configuration you&amp;rsquo;d want to get started with, but there were two things I added to my config.</description>
     </item>
     
   </channel>
