@@ -101,7 +101,7 @@ will be executed if there is a match.</p>
 <p>
 Here&#39;s an example of using awk to print 1 if some line of the input contains hello:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> hello <span class="p">|</span> awk <span class="s1">&#39;/hello/ {print 1;}&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> hello <span class="p">|</span> awk <span class="s1">&#39;/hello/ {print 1;}&#39;</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -128,7 +128,7 @@ We can also ask awk to give us the nth word in the current line with
 <p>
 And that&#39;s basically all we need! Here is the script:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># &#34;Time&#34; will appear before &#34;java&#34; in my output (e.g. &#34;Time ...\n java ...\n Time ...\n ...&#34;).</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># &#34;Time&#34; will appear before &#34;java&#34; in my output (e.g. &#34;Time ...\n java ...\n Time ...\n ...&#34;).</span>
 <span class="c1"># Also, substr used to remove the &#39;s&#39; character from time&#39;s output</span>
 awk -v <span class="nv">j</span><span class="o">=</span><span class="m">1</span> <span class="s1">&#39;/Time/{printf(&#34;%d %s &#34;, j++, $3)} /java/{printf(&#34;%s\n&#34;, substr($5, 1, length($5)-1))}&#39;</span></code></pre></div>
 </div>
@@ -144,7 +144,7 @@ this case.) Also, my output doesn&#39;t have any lines that contain both &#34;Ti
 When my program is run five times and the output is piped to that awk command, it produces
 data like this:</p>
 <div class="src src-text">
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">1 12.11 2.547
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">1 12.11 2.547
 2 11.294 3.07
 3 14.375 3.102
 4 12.407 3.208
@@ -169,7 +169,7 @@ and column 2 on y. To plot one line, you&#39;d use <code class="verbatim">p &#34
 make it a line plot), but we want two lines, and also to use this without gnuplot&#39;s interactive mode, so
 here&#39;s the full command:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># data.dat is my file name, convention seems to end it with *.dat.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># data.dat is my file name, convention seems to end it with *.dat.</span>
 <span class="nv">SETUP_OUTPUT</span><span class="o">=</span><span class="s2">&#34;set terminal png size 500,500; set output &#39;blogplot.png&#39;;&#34;</span>
 <span class="nv">PLOT_DATA</span><span class="o">=</span><span class="s2">&#34;p &#39;data.dat&#39; u 1:2 title &#39;Real Time&#39; w lp, &#39;data.dat&#39; u 1:3 title &#39;Printed Time&#39; w lp&#34;</span>
 gnuplot -e <span class="s2">&#34;</span><span class="nv">$SETUP_OUTPUT</span><span class="s2"> </span><span class="nv">$PLOT_DATA</span><span class="s2">&#34;</span></code></pre></div>
@@ -237,7 +237,7 @@ Getting the Calendar
 <p>Firstly, you&#39;ll want to activate the calendar module in your <code class="verbatim">init.el</code> by uncommenting it.
 It&#39;s on line 176 in <code class="verbatim">init.el</code> at the time of writing.</p>
 <div class="src src-elisp">
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="nb">:app</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="nb">:app</span>
 <span class="nv">calendar</span></code></pre></div>
 </div>
 <p>Once you <code>:wq!</code> and <code class="verbatim">doom sync</code>, you should have access to a calendar by running <code class="verbatim">M-x =calendar</code>.
@@ -255,7 +255,7 @@ to your private config, <code class="verbatim">config.el</code>.)</p>
 <p>
 The doom docs suggest a function like this.</p>
 <div class="src src-elisp">
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-helper</span> <span class="p">()</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-helper</span> <span class="p">()</span>
   <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span> <span class="c1">;; Allows us to call the function with =M-x [functionName]=</span>
   <span class="p">(</span><span class="nv">cfw:open-calendar-buffer</span>
    <span class="nb">:contents-sources</span>
@@ -275,7 +275,7 @@ try to implement that with our calendar function.</p>
 I&#39;ve taken and modified the original calendar function. This is the main function we would call
 with <code class="verbatim">M-x =my-calendar</code>, I&#39;ve renamed it so the old calendar <code class="verbatim">M-x =calendar</code> is still there.</p>
 <div class="src src-elisp">
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">=my-calendar</span> <span class="p">()</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">=my-calendar</span> <span class="p">()</span>
   <span class="s">&#34;Activate (or switch to) *my* </span><span class="ss">`calendar&#39;</span><span class="s"> in its workspace.&#34;</span>
   <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">featurep!</span> <span class="nb">:ui</span> <span class="nv">workspaces</span><span class="p">)</span> <span class="c1">;; if we&#39;ve enabled workspaces</span>
@@ -291,7 +291,7 @@ with <code class="verbatim">M-x =my-calendar</code>, I&#39;ve renamed it so the 
 </div>
 <p>The above mostly uses existing Elisp functions, except for <code class="verbatim">calendar-init</code>, which is below:</p>
 <div class="src src-elisp">
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-init</span> <span class="p">()</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-init</span> <span class="p">()</span>
   <span class="c1">;; switch to existing calendar buffer if applicable</span>
   <span class="p">(</span><span class="nv">if-let</span> <span class="p">(</span><span class="nv">win</span> <span class="p">(</span><span class="nv">cl-find-if</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">b</span><span class="p">)</span> <span class="p">(</span><span class="nv">string-match-p</span> <span class="s">&#34;^\\*cfw:&#34;</span> <span class="p">(</span><span class="nf">buffer-name</span> <span class="nv">b</span><span class="p">)))</span>
                            <span class="p">(</span><span class="nv">doom-visible-windows</span><span class="p">)</span>
@@ -304,7 +304,7 @@ with <code class="verbatim">M-x =my-calendar</code>, I&#39;ve renamed it so the 
 Finally, here&#39;s all of the code together which you can paste into your <code class="verbatim">config.el</code>.
 Remember to add your own iCalendar name/link/colour.</p>
 <div class="src src-elisp">
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-helper</span> <span class="p">()</span> <span class="c1">;; doesn&#39;t have to be interactive</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">calendar-helper</span> <span class="p">()</span> <span class="c1">;; doesn&#39;t have to be interactive</span>
   <span class="p">(</span><span class="nv">cfw:open-calendar-buffer</span>
    <span class="nb">:contents-sources</span>
    <span class="p">(</span><span class="nf">list</span>
@@ -375,7 +375,7 @@ Prerequisites
 <div id="outline-text-headline-3" class="outline-text-2">
 <p>Org-mode is a plain-text hierarchical markup language.</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="gh">*</span><span class="gs"> This is a (top-level) heading.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="gh">*</span><span class="gs"> This is a (top-level) heading.</span>
   This is text that falls under the main heading.
   <span class="k">* </span>This is a sub heading. <span class="gs">*This is bold text that falls under the sub heading.*</span></code></pre></div>
 </div>
@@ -384,7 +384,7 @@ This would be syntax-highlighted in Doom Emacs.</p>
 <p>
 Comments are supported (unlike Markdown AFAIK):</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c"># This is a comment. This will not be compiled.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c"># This is a comment. This will not be compiled.</span>
 <span class="gh">*</span><span class="gs"> This is a heading</span>
   # This is also a comment. They must be on their own line.
   This is text that falls under the main heading.</code></pre></div>
@@ -401,7 +401,7 @@ Org-mode Options
 <p>You can (optionally) add options to the top of your org document,
 to customize the output.</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c"># Self-explanatory, will generate your name when compiled.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c"># Self-explanatory, will generate your name when compiled.</span>
 <span class="cs">#+AUTHOR</span><span class="c">: Chris</span>
 
 <span class="c"># This one removes the default Table of Contents, to save space:</span>
@@ -432,7 +432,7 @@ Source Code Embedding
 <em>not</em> get syntax highlighting; the good news is that <strong>you</strong> will (in the editor),
 and even language-specific indentation!</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c"># the general syntax is #+begin_src [language]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c"># the general syntax is #+begin_src [language]</span>
 <span class="c">#+BEGIN_SRC </span><span class="cs">python</span><span class="c">
 </span><span class="c"></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
@@ -450,7 +450,7 @@ this level of recursion.</p>
 <p>
 The above code would look something like this in your editor:</p>
 <div class="src src-python">
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
@@ -472,7 +472,7 @@ Math
 <div id="outline-text-headline-6" class="outline-text-2">
 <p>Inline math is pretty straightforward:</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org">This is a graph: $G = (V,E)$</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org">This is a graph: $G = (V,E)$</code></pre></div>
 </div>
 <p>Just enclose LaTeX in two dollar signs.</p>
 <p>
@@ -483,7 +483,7 @@ your org document, often after compiling, the equation is too long to fit in
 The solution wasn&#39;t anything special to org-mode; instead of using
 &#39;\begin{equation}&#39;, use &#39;\begin{gather*}&#39;:</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org">\begin{gather<span class="gs">*}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org">\begin{gather<span class="gs">*}
 </span><span class="gs">    \text{This is a nice equation.}\\
 </span><span class="gs">    e^{i \cdot \pi} + 1 = 0
 </span><span class="gs">\end{gather*</span>}</code></pre></div>
@@ -505,7 +505,7 @@ the terminal to install, and now you&#39;re ready.</p>
 <p>
 PlantUML is considered source code like any other:</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
 </span><span class="c"></span>Bob-&gt;Alice : hello
 <span class="c">#+END_SRC</span></code></pre></div>
 </div>
@@ -516,7 +516,7 @@ Press enter on the image to minimize it.</p>
 <p>
 Now we&#39;ll change the image size. First, your buffer would look like this:</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
 </span><span class="c"></span>Bob-&gt;Alice : hello
 <span class="c">#+END_SRC</span>
 
@@ -526,7 +526,7 @@ Now we&#39;ll change the image size. First, your buffer would look like this:</p
 <p>
 You can add an attribute/option like so:</p>
 <div class="src src-org">
-<div class="highlight"><pre class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c">#+BEGIN_SRC </span><span class="cs">plantuml</span><span class="c">
 </span><span class="c"></span>Bob-&gt;Alice : hello
 <span class="c">#+END_SRC</span>
 
@@ -631,7 +631,7 @@ script that I based on
 also added comments so you should be able to take it and customise it further if
 you want to.
 Put this in your <em>config.el</em> file.</p>
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">hour</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">hour</span>
       <span class="p">(</span><span class="nf">string-to-number</span>
        <span class="p">(</span><span class="nf">substring</span> <span class="p">(</span><span class="nf">current-time-string</span><span class="p">)</span> <span class="mi">11</span> <span class="mi">13</span><span class="p">)))</span> <span class="c1">;; gets the hour</span>
 <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">member</span> <span class="nv">hour</span> <span class="p">(</span><span class="nv">number-sequence</span> <span class="mi">6</span> <span class="mi">16</span><span class="p">))</span> <span class="c1">;; if between 06:00-16:59</span>
@@ -644,7 +644,7 @@ Put this in your <em>config.el</em> file.</p>
 <h1 id="hybrid-line-numbers">Hybrid Line Numbers</h1>
 <p>I also liked the hybrid line numbers that vim had, so add this to your
 <em>config.el</em> to bring it to doom emacs.</p>
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="c1">;; line numbers</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="c1">;; line numbers</span>
 <span class="p">(</span><span class="nb">setq</span> <span class="nv">display-line-numbers-type</span> <span class="ss">&#39;relative</span><span class="p">)</span>
 <span class="p">(</span><span class="nb">setq</span> <span class="nv">linum-relative-current-symbol</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
 </code></pre></div><p>Here&rsquo;s my full
@@ -728,7 +728,7 @@ I would also recommend separating the examples with <code>&lt;|endoftext|&gt;</c
 <blockquote>
 <p><em>(Excerpt from my dataset text file)</em></p>
 </blockquote>
-<pre><code>And all my days are trances,
+<pre tabindex="0"><code>And all my days are trances,
 And all my nightly dreams
 Are where thy grey eye glances,
 And where thy footstep gleams-
@@ -777,7 +777,7 @@ However, the model we will use is already pretrained on text found on the intern
 </ol>
 <p>It&rsquo;s possible you recieved an error message. If so, read the output and try to resolve any missing dependencies (using a Google search).
 If it still doesn&rsquo;t work, you could just manually install the four required modules. Enter these commands one at a time:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pip install fire
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pip install fire
 pip install regex
 pip install requests
 pip install tqdm
@@ -799,7 +799,7 @@ pip install tqdm
 <h1 id="training">Training</h1>
 <p>Finally, it&rsquo;s time to train the model. It will take a fair bit of resources and slow down performance if you are doing anything else while training. It&rsquo;s best to just leave it to train and not use the computer.</p>
 <p>Open up powershell in the folder that contains your encoded dataset and enter the following command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">python train.py --dataset dataset.npz --sample_every <span class="m">50</span> --sample_num <span class="m">2</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">python train.py --dataset dataset.npz --sample_every <span class="m">50</span> --sample_num <span class="m">2</span>
 </code></pre></div><p>You can change &lsquo;2&rsquo; to any number of samples you want to generate as you train it. Generating samples while you train allows you to see the progress of the model.
 Press <em>CTRL+C</em> to stop the training. Technically, it <em>pauses</em>, since you can just run the command again and it will pick up where it left off (as long as you didn&rsquo;t change any of the files).</p>
 <p>That&rsquo;s about it, you now have the ability to generate as many samples as you&rsquo;d like while training. There are some more steps that you could go through once you have your perfect model that would allow you to generate more samples <em>without</em> training. However, it is unlikely you will reach a perfect model, so for the purposes of this post what we have covered is sufficient. I also find it more interesting to generate and view samples as it trains, allowing me to see its progress with each iteration.</p>

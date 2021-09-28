@@ -10,8 +10,8 @@
 <meta itemprop="name" content="Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)">
 <meta itemprop="description" content="Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
 Vim can handle this sufficiently, but I found myself reaching the point where my vim config started to get a little bit cluttered. So, after having a look at Emacs, I decided to make the switch, courtesy of Doom Emacs.
-The init.el file in the private config already handles most of the configuration you&rsquo;d want to get started with, but there were two things I added to my config."><meta itemprop="datePublished" content="2019-12-27T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-12-27T00:00:00&#43;00:00" />
+The init.el file in the private config already handles most of the configuration you&rsquo;d want to get started with, but there were two things I added to my config."><meta itemprop="datePublished" content="2019-12-27T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-12-27T00:00:00+00:00" />
 <meta itemprop="wordCount" content="287">
 <meta itemprop="keywords" content="emacs,elisp," /><meta property="og:title" content="Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)" />
 <meta property="og:description" content="Intro So, inevitably, as one delves deeper into their editor of choice, one finds themselves wishing to customise it to some extent.
@@ -19,8 +19,8 @@ Vim can handle this sufficiently, but I found myself reaching the point where my
 The init.el file in the private config already handles most of the configuration you&rsquo;d want to get started with, but there were two things I added to my config." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cyberchris.xyz/posts/doom-emacs-custom/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-12-27T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2019-12-27T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2019-12-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-27T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Day/Night Theme Switching on Doom Emacs (&#43; Bonus Config)"/>
@@ -98,7 +98,7 @@ script that I based on
 also added comments so you should be able to take it and customise it further if
 you want to.
 Put this in your <em>config.el</em> file.</p>
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">hour</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">hour</span>
       <span class="p">(</span><span class="nf">string-to-number</span>
        <span class="p">(</span><span class="nf">substring</span> <span class="p">(</span><span class="nf">current-time-string</span><span class="p">)</span> <span class="mi">11</span> <span class="mi">13</span><span class="p">)))</span> <span class="c1">;; gets the hour</span>
 <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">member</span> <span class="nv">hour</span> <span class="p">(</span><span class="nv">number-sequence</span> <span class="mi">6</span> <span class="mi">16</span><span class="p">))</span> <span class="c1">;; if between 06:00-16:59</span>
@@ -111,7 +111,7 @@ Put this in your <em>config.el</em> file.</p>
 <h1 id="hybrid-line-numbers">Hybrid Line Numbers<a href="#hybrid-line-numbers" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
 <p>I also liked the hybrid line numbers that vim had, so add this to your
 <em>config.el</em> to bring it to doom emacs.</p>
-<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="c1">;; line numbers</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="c1">;; line numbers</span>
 <span class="p">(</span><span class="nb">setq</span> <span class="nv">display-line-numbers-type</span> <span class="ss">&#39;relative</span><span class="p">)</span>
 <span class="p">(</span><span class="nb">setq</span> <span class="nv">linum-relative-current-symbol</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
 </code></pre></div><p>Here&rsquo;s my full

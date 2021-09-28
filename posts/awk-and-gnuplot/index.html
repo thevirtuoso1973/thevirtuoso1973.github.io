@@ -10,8 +10,8 @@
 <meta itemprop="name" content="Basic Scripting With Awk And Gnuplot">
 <meta itemprop="description" content="Posted to HN. Comments and discussion highly encouraged.
 Introduction  This will be a short example-based guide to (a) awk (b) gnuplot and (c) using them in a script.
- I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp; gnuplot to automate it?"><meta itemprop="datePublished" content="2021-01-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-17T00:00:00&#43;00:00" />
+ I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp; gnuplot to automate it?"><meta itemprop="datePublished" content="2021-01-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-17T00:00:00+00:00" />
 <meta itemprop="wordCount" content="767">
 <meta itemprop="keywords" content="awk,,gnuplot,,bash,,scripts," /><meta property="og:title" content="Basic Scripting With Awk And Gnuplot" />
 <meta property="og:description" content="Posted to HN. Comments and discussion highly encouraged.
@@ -19,8 +19,8 @@ Introduction  This will be a short example-based guide to (a) awk (b) gnuplot an
  I needed to graph some data based on the output of a command run a couple times. So what better way to solve that five minute task than to spend an hour learning awk &amp; gnuplot to automate it?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cyberchris.xyz/posts/awk-and-gnuplot/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-01-17T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-01-17T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2021-01-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-17T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Basic Scripting With Awk And Gnuplot"/>
@@ -162,7 +162,7 @@ will be executed if there is a match.</p>
 <p>
 Here&#39;s an example of using awk to print 1 if some line of the input contains hello:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> hello <span class="p">|</span> awk <span class="s1">&#39;/hello/ {print 1;}&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> hello <span class="p">|</span> awk <span class="s1">&#39;/hello/ {print 1;}&#39;</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -189,7 +189,7 @@ We can also ask awk to give us the nth word in the current line with
 <p>
 And that&#39;s basically all we need! Here is the script:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># &#34;Time&#34; will appear before &#34;java&#34; in my output (e.g. &#34;Time ...\n java ...\n Time ...\n ...&#34;).</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># &#34;Time&#34; will appear before &#34;java&#34; in my output (e.g. &#34;Time ...\n java ...\n Time ...\n ...&#34;).</span>
 <span class="c1"># Also, substr used to remove the &#39;s&#39; character from time&#39;s output</span>
 awk -v <span class="nv">j</span><span class="o">=</span><span class="m">1</span> <span class="s1">&#39;/Time/{printf(&#34;%d %s &#34;, j++, $3)} /java/{printf(&#34;%s\n&#34;, substr($5, 1, length($5)-1))}&#39;</span></code></pre></div>
 </div>
@@ -205,7 +205,7 @@ this case.) Also, my output doesn&#39;t have any lines that contain both &#34;Ti
 When my program is run five times and the output is piped to that awk command, it produces
 data like this:</p>
 <div class="src src-text">
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">1 12.11 2.547
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">1 12.11 2.547
 2 11.294 3.07
 3 14.375 3.102
 4 12.407 3.208
@@ -230,7 +230,7 @@ and column 2 on y. To plot one line, you&#39;d use <code class="verbatim">p &#34
 make it a line plot), but we want two lines, and also to use this without gnuplot&#39;s interactive mode, so
 here&#39;s the full command:</p>
 <div class="src src-bash">
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># data.dat is my file name, convention seems to end it with *.dat.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># data.dat is my file name, convention seems to end it with *.dat.</span>
 <span class="nv">SETUP_OUTPUT</span><span class="o">=</span><span class="s2">&#34;set terminal png size 500,500; set output &#39;blogplot.png&#39;;&#34;</span>
 <span class="nv">PLOT_DATA</span><span class="o">=</span><span class="s2">&#34;p &#39;data.dat&#39; u 1:2 title &#39;Real Time&#39; w lp, &#39;data.dat&#39; u 1:3 title &#39;Printed Time&#39; w lp&#34;</span>
 gnuplot -e <span class="s2">&#34;</span><span class="nv">$SETUP_OUTPUT</span><span class="s2"> </span><span class="nv">$PLOT_DATA</span><span class="s2">&#34;</span></code></pre></div>
